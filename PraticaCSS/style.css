@@ -1,0 +1,94 @@
+/* Meu primeiro 
+arquivo CSS Ex:
+
+seletor{
+    propriedade: valor;
+    propriedade: valor2;
+} 
+
+
+*/
+
+p {
+    /*color: red;*/
+    color: white;
+    font-size: 15px;
+    font-family: arial, "Times new roman";
+    text-shadow: 1px 1px 1px #111;
+}
+
+body {
+    /*background-color: beige;*/
+    background-color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial;
+}
+
+header {
+    background-color: #35b8b0;
+    height: 80px;
+    padding: 20px;
+}
+
+h1 {
+    color: #FF7F50;
+    text-shadow: 1px 1px 1px #111;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+footer {
+    clear: both;
+    background-color: #35b8b0;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+/*    font-size: 12px;*/
+    text-shadow: 1px 1px 1px #111;
+}
+
+/*ID*/
+#principal {
+    clear: both;
+    background-image: url('cidade.jpg');
+    background-size: 100%;
+    min-height: 400px;
+    padding: 80px 0 0 0;
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    margin-top: 30px;
+    float: right;
+}
+
+#menu a {
+    padding: 52px 20px;
+    text-decoration: none;
+    color: #111;
+    text-shadow: 1px 1px #111111;
+}
+
+#menu a:hover {
+    background-color: #2F4F4F;
+    color:#111;
+}
+
+/* Class */
+
+.container { 
+    width: 960px;
+    margin: 0 auto;
+}
+
+.efeito {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px 0 80px 0;
+}

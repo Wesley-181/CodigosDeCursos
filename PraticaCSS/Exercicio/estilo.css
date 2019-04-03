@@ -1,0 +1,50 @@
+* {
+   margin: 5px; 
+   padding: 0;
+}
+
+header {
+    background-color: darkgrey;
+    height: 100px;
+    border: solid;
+}
+
+nav {
+    background-color: darkgrey;
+    top: 59px;
+    position: relative;
+    border: solid;
+    margin: -2px;
+    height: 22px;
+}
+
+div {
+    height: 400px;
+    margin: 10px 5px;
+}
+
+article {
+    background-color: darkgrey;
+    margin: 0;
+    border: solid;
+    width: 58%;
+    height: 400px;
+    float: left;
+}
+
+aside {
+    background-color: darkgrey;
+    margin: 0;
+    border: solid;
+    float: right;
+    width: 40%;
+    height: 400px;
+}
+
+footer {
+    background-color: darkgrey;
+    border: solid;
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
