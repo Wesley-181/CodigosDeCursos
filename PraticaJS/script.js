@@ -97,3 +97,37 @@ function multiplicacao(a, b){
 }
 console.log(multiplicacao(5,5))
 */
+
+/*Eventos
+
+function mensagem(nome){
+	alert("Ei não clique em mim " + nome);
+
+}
+*/
+
+/*DOM
+
+function mudaCor(cor){
+	var elemento = document.getElementById("mensagem");
+	elemento.style.color = cor;
+	//elemento.style.backgroundColor = cor;
+	//elemento.style.fontSize = '50px';
+}
+*/
+
+/*Validação de Formulário
+
+function valida(){
+	var nome = document.getElementById('nome');
+
+	// alert(nome.value);
+
+	if (nome.value == "") {
+		alert("Campo nome não pode estar em branco.")
+	}
+	else{
+		alert("Nenhum problema foi detectado. Seu formulário pode ser enviado com sucesso.");
+	}
+}
+*/
