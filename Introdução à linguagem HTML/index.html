@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Indice</title>
+</head>
+
+<body>
+	<!-- Imagens 
+	<img src="imagem.png" height="100px"> -->
+
+	<!-- Links 
+	<a href="pagina2.html">Página 2</a> -->
+
+	<form action="processa.php" method="Post">
+		<label>Nome: </label>
+		<input type="text" name="nome" placeholder="Digite o seu nome">
+
+		<br>
+		<br>
+
+		<label>Senha: </label>
+		<input type="password" name="senha">
+		
+		<br>
+		<br>
+
+		<label>Input Oculto >>></label>
+		<input type="hidden" name="CampoOculto">
+
+		<br>
+		<br>
+
+		<label>Selecione: </label>
+		<select>
+			<option value="1" checked>Opção 1</option>
+			<option value="2">Opção 2</option>
+			<option value="3">Opção 3</option>
+			<option value="4">Opção 4</option>
+		</select>
+
+		<br>
+		<br>
+		<!-- Radio Button -->
+		<label>Verde</label>
+		<input type="radio" name="unico" checked>
+		<br>
+		<label>Amarelo</label>
+		<input type="radio" name="unico">
+		<br>
+		<label>Azul</label>
+		<input type="radio" name="unico">
+
+		<br>
+		<br>
+		<!-- Caixas de Seleção (Checkbox)-->
+		<label>Habilidade 1: </label>
+		<input type="checkbox" name="habilidades">
+		<br>
+		<label>Habilidade 2: </label>
+		<input type="checkbox" name="habilidades">
+		<br>
+		<label>Habilidade 3: </label>
+		<input type="checkbox" name="habilidades">
+		<br>
+		<label>Habilidade 4: </label>
+		<input type="checkbox" name="habilidades">
+
+		<br>
+		<br>
+
+		<input type="submit" name="submit" value="Enviar">
+
+	</form>
+
+</body>
+</html>
