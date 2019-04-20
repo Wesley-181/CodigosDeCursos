@@ -25,8 +25,9 @@ public class E13 {
 		System.out.println("Sua contribuição de INSS é de: R$" + INSS);
 		System.out.println("Sua contribuição de sindicato é de: R$" + SINDICATO);
 		
-		double salarioliquido = salariobruto - IR - INSS - SINDICATO;
 		double descontos = IR + INSS + SINDICATO;
+		double salarioliquido = salariobruto - descontos;
+		
 		
 		System.out.println("Os descontos no salario somam R$" + descontos + " e seu salario liquido é de R$" + salarioliquido);
 

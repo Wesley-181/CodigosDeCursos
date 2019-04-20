@@ -8,7 +8,7 @@ public class E5 {
 
 		Scanner box = new Scanner(System.in);
 		
-		System.out.println("Digite o comprimento em metros: ");
+		System.out.println("Digite o valor em metros: ");
 		double valorMetros = box.nextDouble();
 		
 		double valorCm = valorMetros * 100;

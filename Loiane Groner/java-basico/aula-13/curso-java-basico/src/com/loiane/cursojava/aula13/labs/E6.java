@@ -8,10 +8,10 @@ public class E6 {
 		
 		Scanner box = new Scanner(System.in);
 		
-		System.out.println("Digite o valor do raio da circunferencia: ");
+		System.out.println("Digite o valor do raio da circunferência: ");
 		double raio = box.nextDouble();
 		
-		double areaCircunferencia = 3.14 * (raio * raio);
+		double areaCircunferencia = Math.PI * Math.pow(raio, 2);
 		
 		System.out.println("A area do circulo é: " + areaCircunferencia);
 

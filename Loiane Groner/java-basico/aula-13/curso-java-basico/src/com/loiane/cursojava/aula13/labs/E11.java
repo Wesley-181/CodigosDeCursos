@@ -8,6 +8,8 @@ public class E11 {
 
 		Scanner box = new Scanner(System.in);
 		
+		/* Código anterior
+		 * 
 		System.out.println("Digite dois numeros inteiros: ");
 		int numinteiro1 = box.nextInt();
 		int numinteiro2 = box.nextInt();
@@ -27,7 +29,22 @@ public class E11 {
 		
 		//O terceiro elevado ao cubo
 		double terceirocubo = numreal * numreal * numreal;
-		System.out.println("O terceiro numero elevado ao cubo é: " + terceirocubo);
+		System.out.println("O terceiro numero elevado ao cubo é: " + terceirocubo); */
+		
+		System.out.println("Digite dois numeros inteiros: ");
+		int num1 = box.nextInt();
+		int num2 = box.nextInt();
+		System.out.println("Digite um numero real: ");
+		double num3 = box.nextDouble();
+		
+		int resultado1 = (num1 * 2) * (num2 / 2);
+		double resultado2 = (num1 * 3) + num3;
+		double resultado3 = Math.pow(num3, 3);
+		
+		System.out.println("Resultado 1: " + resultado1);
+		System.out.println("Resultado 2: " + resultado2);
+		System.out.println("Resultado 3: " + resultado3);
+		
 	}
 
 }
