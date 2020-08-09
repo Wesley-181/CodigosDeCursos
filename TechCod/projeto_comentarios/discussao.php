@@ -35,6 +35,63 @@
                 <p class="texto">3. Lorem Ipsum é que ele tem uma distribuição</p>
 
                 <p class="texto">4. letras mais ou menos normal</p>
+
+                <h2>Deixe seu comentário</h2>
+
+                <form action="POST">
+                    <img src="imagens/perfil.png">
+                    <textarea name="texto" placeholder="Participe da discussão"></textarea>
+                    <input type="submit" value="PUBLICAR COMENTARIO">
+                </form>
+
+                <div class="area-comentario">
+                    <img src="imagens/perfil.png">
+                    <h3>Nome da Pessoa 1</h3>
+                    <h4>Horário e Data <a href="">Excluir</a></h4>
+                    <p>Comentário desta pessoa</p>
+                </div>
+
+                <div class="area-comentario">
+                    <img src="imagens/perfil.png">
+                    <h3>Nome da Pessoa 2</h3>
+                    <h4>Horário e Data <a href="">Excluir</a></h4>
+                    <p>Comentário desta pessoa</p>
+                </div>
+
+                <div class="area-comentario">
+                    <img src="imagens/perfil.png">
+                    <h3>Nome da Pessoa 3</h3>
+                    <h4>Horário e Data <a href="">Excluir</a></h4>
+                    <p>Comentário desta pessoa</p>
+                </div>
+
+                <div class="area-comentario">
+                    <img src="imagens/perfil.png">
+                    <h3>Nome da Pessoa 4</h3>
+                    <h4>Horário e Data <a href="">Excluir</a></h4>
+                    <p>Comentário desta pessoa</p>
+                </div>
+
+                <div class="area-comentario">
+                    <img src="imagens/perfil.png">
+                    <h3>Nome da Pessoa 5</h3>
+                    <h4>Horário e Data <a href="">Excluir</a></h4>
+                    <p>Comentário desta pessoa</p>
+                </div>
+            </section>
+            
+            <section id="conteudo2">
+                <div>
+                    <img src="imagens/img-lateral.jpg">
+                    <p>Analisar seu layout. O ponto de usar o Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui'.</p>
+                </div>
+            </section>
+            
+            <section id="conteudo3">
+                <div>
+                    <h5>Saiba mais sobre como fazer</h5>
+                    <p>Analisar seu layout. O ponto de usar o Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui'.</p>
+                </div>
             </section>
         </div>
     </body>
