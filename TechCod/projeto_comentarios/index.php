@@ -10,8 +10,8 @@
     <body>
         <nav>
             <ul>
-                <li><a href="">Discussão</a></li>
-                <li><a href="">Entrar</a></li>
+                <li><a href="discussao.php">Discussão</a></li>
+                <li><a href="entrar.php">Entrar</a></li>
             </ul>
         </nav>
         <h3>CONTEÚDO QUALQUER</h3>
