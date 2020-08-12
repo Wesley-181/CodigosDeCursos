@@ -40,7 +40,7 @@
 
                 <form action="POST">
                     <img src="imagens/perfil.png">
-                    <textarea name="texto" placeholder="Participe da discussão"></textarea>
+                    <textarea name="texto" placeholder="Participe da discussão" maxlength="400"></textarea>
                     <input type="submit" value="PUBLICAR COMENTARIO">
                 </form>
 

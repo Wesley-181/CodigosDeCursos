@@ -11,9 +11,9 @@
         <h1>CADASTRE-SE</h1>
 
         <label for="nome">NOME</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" maxlength="40">
         <label for="email">EMAIL</label>
-        <input type="email" name="email" autocomplete="off" id="email">
+        <input type="email" name="email" autocomplete="off" id="email" maxlength="40">
         <label for="senha">SENHA</label>
         <input type="password" name="senha" id="senha">
         <label for="confSenha">CONFIRMAR SENHA</label>
