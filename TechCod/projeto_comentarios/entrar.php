@@ -19,3 +19,30 @@
     </form>
 </body>
 </html>
+
+<?php
+
+    if (isset($_POST['email'])) 
+    {
+        $email = addslashes($_POST['email']);
+        $senha = addslashes($_POST['senha']);
+
+        if (!empty($email) && !empty($senha))
+        {
+            require_once 'classes/usuarios.php';
+            $us = new Usuario("projeto_comentarios", "localhost", "root", "");
+            if ($us->entrar($email, $senha))
+            {
+                header("location: index.php");
+            } else
+            {
+                echo "Email e/ou senha estão incorretos!";
+            }
+        } else
+        {
+            echo "Preencha todos os campos!";
+        }
+    }
+
+
+?>

@@ -1,9 +1,9 @@
 <?php
 
-Class usuario{
+Class Usuario{
 
 //Variáveis
-    private pdo;
+    private $pdo;
 
 //Construtor
     public function __construct($dbname, $host, $usuario, $senha)
@@ -27,7 +27,7 @@ Class usuario{
     public function cadastrar($nome, $email, $senha)
     {
         //Antes de cadastrar verificar se já foi cadastrado
-            $cmd = $pdo->prepare("SELECT id from usuarios WHERE email = :e");
+            $cmd = $this->pdo->prepare("SELECT id from usuarios WHERE email = :e");
             $cmd->bindValue(":e", $email);
             $cmd->execute();
 
@@ -38,7 +38,7 @@ Class usuario{
             } else //não veio id
             {
                 //Cadastrar
-                $cmd = $pdo->prepare("INSERT INTO usuarios (nome, email, senha) values (:n, :e, :s)");
+                $cmd = $this->pdo->prepare("INSERT INTO usuarios (nome, email, senha) values (:n, :e, :s)");
                 $cmd->bindValue(":n", $nome);
                 $cmd->bindValue(":e", $email);
                 $cmd->bindValue(":s", md5($senha));

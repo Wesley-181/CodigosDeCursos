@@ -22,3 +22,43 @@
     </form>
 </body>
 </html>
+
+<!--============================== PHP =================================-->
+
+<?PHP
+
+// 1 - VERIFICAR SE A PESSOA APERTOU O BOTÃO CADASTRAR
+// 2 - GUARDAR DADOS DENTRO DAS VARIÁVEIS
+// 3 - ENVIAR DADOS COLHIDOS PARA A CLASSE, FUNÇÃO CADASTRAR
+// 4 - VERIFICAR SE O RETORNO É FALSE OU TRUE
+
+    if (isset($_POST['nome']))
+    {
+        $nome = addslashes($_POST['nome']);
+        $email = addslashes($_POST['email']);
+        $senha = addslashes($_POST['senha']);
+        $confSenha = addslashes($_POST['confSenha']);
+
+        if (!empty($nome) && !empty($email) && !empty($senha) && !empty($confSenha))
+        {
+            if($senha == $confSenha)
+            {
+                require_once 'classes/usuarios.php';
+                $us = new Usuario("projeto_comentarios", "localhost", "root", "");
+                if($us->cadastrar($nome, $email, $senha))
+                {
+                    echo "Cadastrado com sucesso!";
+                } else
+                {
+                    echo "Email já está cadastrado!";
+                }
+            } else
+            {
+                echo "Senhas não correspondem!";
+            }
+        } else 
+        {
+            echo "Preencha todos os campos!";
+        }
+    }
+?>
