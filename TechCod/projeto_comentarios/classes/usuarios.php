@@ -76,5 +76,14 @@ Class Usuario{
             return false; //não encontrada
          }
     }
+
+    public function buscarDadosUser($id)
+    {
+        $cmd = $this->pdo->prepare("SELECT * from usuarios WHERE id = :id");
+        $cmd->bindValue(":id",$id);
+        $cmd->execute();
+        $dados = $cmd->fetch();
+        return $dados;
+    }
 }
 ?>
